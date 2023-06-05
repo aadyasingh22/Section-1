@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+    <style>
+        *{
+            font-family: montserrat;
+        }
+        
+        body{
+            display: flex;
+            background-image: url("/images/bg.jpg");
+            background-size: cover;
+            background-position: center;
+            backdrop-filter: blur(10px);
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100%;
+            margin: 0;
+        }
+        .mycard{
+            color: white;
+            font-size: large;
+            border: 2px solid black;
+            border-width: 25%;
+            border-radius: 10px;
+            background-color: transparent;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+        .myinput{
+            display: block;
+            padding: 5px;
+            border: none;
+            margin-top: 5px;
+            margin-bottom: 10px;
+            border-radius: 10px;
+            width: 100%;
+
+        }
+        .mybtn{
+            background-color: blueviolet;
+            width: 100%;
+            padding: 5px 8px;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        .mybtn:hover{
+            transform: scale(1.1) translateY(5px);
+            box-shadow: 0 -20px 10px -5px rgb(11, 10, 12);
+        }
+    </style>
+</head>
+<body>
+    <div class="mycard">
+        <h1>Create an account</h1>
+
+        <form style="padding: 15px;">
+            <label for="name">Name</label>
+            <input class="myinput" type="text" id="name" placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input class="myinput" type="email" id="email" placeholder="Enter your email">
+
+            <label for="pswd">Password</label>
+            <input class="myinput" type="password" id="pswd" placeholder="Enter your Password">
+
+            <label for="cpswd">Confirm Password</label>
+            <input class="myinput" type="password" id="cpswd" placeholder="Confirm your password">
+        </form>
+
+        <button class="mybtn">Create Account</button>
+
+    </div>
+</body>
+</html>

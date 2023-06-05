@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using CSS</title>
+    <style>
+        /*p is name selector */
+        p{
+            font-size: 30px;
+            font-weight:900 ;
+            letter-spacing: 2px;
+            font-style: oblique;
+            color: black;
+        }
+        /*.mytag is class selector*/
+        .mytag{
+            background-color: blueviolet;
+            color: black;
+        }
+        /*#myid is id selector*/
+        #myid{
+            border: 2px solid rgb(12, 12, 12);
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 class="mytag" style="text-align: center; color: rgb(221, 21, 21); font-size: 50px;">Inline CSS</h1>
+    <p>Inline CSS is used to style individual tags only.</p>
+    <h1 class="mytag">Internal CSS</h1>
+    <p id="myid">Internal CSS is used to style entire page at once.</p>
+    <h1 class="mytag">Style Tag</h1>
+    <p id="myid">Style tag is used inside head tag for using Internal CSS.</p>
+    <h1 class="mytag">Priority</h1>
+    <p>ID Selector>Class Selector>Name Selector</p>
+</body>
+</html>

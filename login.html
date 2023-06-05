@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic" rel="stylesheet" />
+
+<style>
+    *{
+        font-family: montserrat;
+    }
+    .mycard{
+        border:2px solid black;
+        width: 25%;
+        border-radius: 10px;
+        /* x-offset y-offset blur size color */
+        box-shadow: 2px 3px 5px 3px rgba(0, 0, 0, 0.226); 
+        padding: 30px;
+        box-sizing: border-box;
+        background-color: white;
+       }
+
+    body{
+        display:flex;
+        margin: 0;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url("https://static.vecteezy.com/system/resources/previews/002/924/937/original/empty-minimal-wooden-top-table-wood-podium-in-white-background-with-green-leaves-for-product-presentation-mock-up-show-cosmetic-product-display-podium-stage-pedestal-or-platform-3d-free-vector.jpg");
+        background-size: cover;
+        backdrop-filter: blur(10px);
+    }
+    .myinput{
+        display:block;
+        width: 100%;
+        padding: 5px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        border-bottom: 2px;
+        background-color: #ddd;
+    }
+    .mybtn{
+        width: 100%;
+        background-color: rgb(95, 6, 136);
+        padding: 5px 10px;
+        color:rgb(247, 240, 240);
+        margin-top:20px;
+        margin-bottom:30px;
+        border:none;
+        border-radius:5px;
+        transition-duration: 0.5s;
+    }
+    .brand{
+        font-size: 40px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-align: center;
+    }
+    .text{
+        text-align: center;
+    }
+    form{
+        margin-top: 50px;
+    }
+    .mybtn:hover{
+        transform: scale(1.1) translateY(5px);
+        box-shadow: 0 -20px 10px -5px rgb(77, 67, 67);
+    }
+</style>
+<body>
+<div class="mycard">
+    <p class="brand">Brand Logo</p>
+    <h2>Member Login</h2>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ipsum. </p>
+
+    <form>
+        <label for="">EMail Address</label>
+        <input class="myinput" type="email">
+
+        <label for="">Password</label>
+        <input class="myinput" type="password">
+
+        <button class="mybtn"> Submit</button>
+    </form>
+</div>
+</body>
+</html>
